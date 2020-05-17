@@ -34,6 +34,7 @@ Algorithm 1 reports the pseudocode of the unfolded WMMSE and Fig 1 depicts the o
 
 
 ![](pseudocode.png)
+
 <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{100}&space;\small&space;\nabla&space;f({{\boldsymbol{v}}}^{(k)}_i)&space;=-2\alpha_{i}w_{i}u_{i}\boldsymbol{h}_i&space;&plus;&space;2\boldsymbol{A}{\boldsymbol{v}}^{(k)}_i" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\dpi{100}&space;\small&space;\nabla&space;f({{\boldsymbol{v}}}^{(k)}_i)&space;=-2\alpha_{i}w_{i}u_{i}\boldsymbol{h}_i&space;&plus;&space;2\boldsymbol{A}{\boldsymbol{v}}^{(k)}_i" title="\small \nabla f({{\boldsymbol{v}}}^{(k)}_i) =-2\alpha_{i}w_{i}u_{i}\boldsymbol{h}_i + 2\boldsymbol{A}{\boldsymbol{v}}^{(k)}_i" /></a>
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{100}&space;\small&space;\boldsymbol{A}&space;\triangleq&space;\sum_{i&space;=&space;1}^{N}{\alpha_{i}w_{i}|u_i|^2\boldsymbol{h}_i\boldsymbol{h}^H_i}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\dpi{100}&space;\small&space;\boldsymbol{A}&space;\triangleq&space;\sum_{i&space;=&space;1}^{N}{\alpha_{i}w_{i}|u_i|^2\boldsymbol{h}_i\boldsymbol{h}^H_i}" title="\small \boldsymbol{A} \triangleq \sum_{i = 1}^{N}{\alpha_{i}w_{i}|u_i|^2\boldsymbol{h}_i\boldsymbol{h}^H_i}" /></a>
