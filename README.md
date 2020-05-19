@@ -33,7 +33,6 @@ where <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{100}&space;\small
 Algorithm 1 reports the pseudocode of the unfolded WMMSE and Fig 1 depicts the overall neural network architecture.
 
 ![](pseudocode.png)
-
 <a href="https://www.codecogs.com/eqnedit.php?latex=i" target="_blank"><img src="https://latex.codecogs.com/svg.latex?i" title="i" /></a> indexes the users, <a href="https://www.codecogs.com/eqnedit.php?latex=l" target="_blank"><img src="https://latex.codecogs.com/svg.latex?l" title="l" /></a> indexes the layers/iterations, and <a href="https://www.codecogs.com/eqnedit.php?latex=k" target="_blank"><img src="https://latex.codecogs.com/svg.latex?k" title="k" /></a> indexes the PGD steps.
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{100}&space;\small&space;\nabla&space;f({{\boldsymbol{v}}}^{(k)}_i)&space;=-2\alpha_{i}w_{i}u_{i}\boldsymbol{h}_i&space;&plus;&space;2\boldsymbol{A}{\boldsymbol{v}}^{(k)}_i" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\dpi{100}&space;\small&space;\nabla&space;f({{\boldsymbol{v}}}^{(k)}_i)&space;=-2\alpha_{i}w_{i}u_{i}\boldsymbol{h}_i&space;&plus;&space;2\boldsymbol{A}{\boldsymbol{v}}^{(k)}_i" title="\small \nabla f({{\boldsymbol{v}}}^{(k)}_i) =-2\alpha_{i}w_{i}u_{i}\boldsymbol{h}_i + 2\boldsymbol{A}{\boldsymbol{v}}^{(k)}_i" /></a>
