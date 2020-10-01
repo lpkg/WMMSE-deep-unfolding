@@ -32,7 +32,7 @@ We define <a href="https://www.codecogs.com/eqnedit.php?latex=\boldsymbol{H}&spa
 ## Proposed unfolded WMMSE algorithm
 Algorithm 1 reports the pseudocode of the unfoldable WMMSE and Fig 1 depicts the overall neural network architecture. 
 
-![](pseudocode.png)
+![](pseudocode_unfoldable_WMMSE.png)
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=i" target="_blank"><img src="https://latex.codecogs.com/svg.latex?i" title="i" /></a> indexes the users, <a href="https://www.codecogs.com/eqnedit.php?latex=l" target="_blank"><img src="https://latex.codecogs.com/svg.latex?l" title="l" /></a> indexes the layers/iterations, and <a href="https://www.codecogs.com/eqnedit.php?latex=k" target="_blank"><img src="https://latex.codecogs.com/svg.latex?k" title="k" /></a> indexes the PGD steps.
 
