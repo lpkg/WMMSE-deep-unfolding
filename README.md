@@ -1,10 +1,10 @@
 # Deep weighted MMSE downlink beamforming
 
-In this GitHub repository the user can here find the code used to reproduce the plots and the results in our paper[[1]](#ourpaper).
+In this GitHub repository the user can find the code used to reproduce the plots and the results in our paper[[1]](#ourpaper).
 We propose the novel application of **deep unfolding** to the weighted minimum mean square error (WMMSE) algorithm in [[2]](#WMMSE_Shi).
-The WMMSE is an iterative algorithm that converges to a local solution of the weigthed sum rate maximization problem subject to a power constraint, which is known to be NP-hard. As noted in [[3]](#WMMSE_E2E), the formulation of the WMMSE algorithm, as described in [[2]](#WMMSE_Shi), is not suitable to be unfolded due to a matrix inversion, an eigendecomposition, and a bisection search performed at each itearation. Therefore, in our paper [[1]](#ourpaper), we propose an alternative formulation that avoids these operations. Specifically, we replace the method of Lagrange multipliers with the **projected gradient descent (PGD) approach**. In this way the matrix inversion, the eigendecomposition, and the bisection search are replaced by simple operations that can be easily mapped to network layers.
+The WMMSE is an iterative algorithm that converges to a local solution of the weigthed sum rate maximization problem subject to a power constraint, which is known to be NP-hard. As noted in [[3]](#WMMSE_E2E), the formulation of the WMMSE algorithm, as described in [[2]](#WMMSE_Shi), is not suitable for deep unfolding due to a matrix inversion, an eigendecomposition, and a bisection search performed at each itearation. Therefore, in our paper [[1]](#ourpaper), we propose an alternative formulation that avoids these operations. Specifically, we replace the method of Lagrange multipliers with the **projected gradient descent (PGD) approach**. In this way the matrix inversion, the eigendecomposition, and the bisection search are replaced by simple operations that can be easily mapped to network layers.
 
-In the jupyter notebook "Unfolded_WMMSE_versus_WMMSE.ipynb" the user can find the implementation in Python 3.6.8 of the WMMSE algorithm in [[2]](#WMMSE_Shi) and the implementation in Python 3.6.8 and Tensorflow 1.13.1 of our proposed deep unfolded WMMSE algorithm [[1]](#ourpaper). The notebook cells should be run in sequential order. Note that the training time can vary from an hour to many hours, depending on the parameter settings, e.g., the number of iterations and the number of PGD steps, and on the user hardware. 
+In the jupyter notebook "Deep_Unfolded_WMMSE_versus_WMMSE.ipynb" the user can find the implementation in Python 3.6.8 of the WMMSE algorithm in [[2]](#WMMSE_Shi) and the implementation in Python 3.6.8 and Tensorflow 1.13.1 of our proposed deep unfolded WMMSE algorithm [[1]](#ourpaper). The notebook cells should be run in sequential order. Note that the training time can vary from an hour to many hours, depending on the parameter settings, e.g., the number of iterations and the number of PGD steps, and on the user hardware. 
 
 ## Problem formulation
 Let <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{100}&space;\small&space;x_i&space;\sim&space;\mathcal{CN}(0,\,1)" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\dpi{100}&space;\small&space;x_i&space;\sim&space;\mathcal{CN}(0,\,1)" title="\small x_i \sim \mathcal{CN}(0,\,1)" /></a> be the transmitted data symbol to user <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{100}&space;\small&space;i" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\dpi{100}&space;\small&space;i" title="\small i" /></a> and let <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{100}&space;\small&space;\boldsymbol{h}_i&space;" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\dpi{100}&space;\small&space;\boldsymbol{h}_i&space;" title="\small \boldsymbol{h}_i" /></a> be the channel between the base station and user <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{100}&space;\small&space;i" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\dpi{100}&space;\small&space;i" title="\small i" /></a>.
@@ -31,7 +31,7 @@ We define <a href="https://www.codecogs.com/eqnedit.php?latex=\boldsymbol{H}&spa
 
 
 
-## Proposed unfolded WMMSE algorithm
+## Proposed deep unfolded WMMSE algorithm
 Algorithm 1 reports the pseudocode of the unfoldable WMMSE and Fig 1 depicts the overall neural network architecture. 
 
 ![](pseudocode_unfoldable_WMMSE.png)
