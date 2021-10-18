@@ -68,7 +68,7 @@ In order to run the code in this repository the following software packages are 
 
 ## Reference
 
-<a id='ourpaper'></a> [1] L. Pellaco, M. Bengtsson, J. Jaldén, "Deep unfolding of the weighted MMSE algorithm," submitted to IEEE Transactions on Signal Processing, 2021.
+<a id='ourpaper'></a> [1] L. Pellaco, M. Bengtsson, J. Jaldén, "Matrix-inverse-free deep unfolding of the weighted MMSE beamforming algorithm," submitted.
 
 <a id='WMMSE_Shi'></a> [2] Q. Shi, M. Razaviyayn, Z. Luo and C. He, "An Iteratively Weighted MMSE Approach to Distributed Sum-Utility Maximization for a MIMO Interfering Broadcast Channel," in IEEE Transactions on Signal Processing, vol. 59, no. 9, pp. 4331-4340, Sept. 2011, doi: 10.1109/TSP.2011.2147784.
 
